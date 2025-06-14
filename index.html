@@ -2,98 +2,97 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Hair by Marcio - Diagnóstico Facial</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- ...existing code... -->
-<style>
-  body {
-    font-family: 'Inter', 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #232526 0%, #414345 100%);
-    color: #f5f5f7;
-    margin: 0;
-    min-height: 100vh;
-  }
-  header {
-    background: rgba(30, 30, 40, 0.95);
-    padding: 32px 0 24px 0;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.12);
-    text-align: center;
-    margin-bottom: 32px;
-  }
-  header h1 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #e0b973;
-    margin: 0;
-  }
-  main {
-    max-width: 540px;
-    margin: 0 auto;
-    padding: 0 16px 32px 16px;
-  }
-  .media-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 32px;
-  }
-  video, canvas {
-    width: 100%;
-    max-width: 480px;
-    border-radius: 16px;
-    box-shadow: 0 0 24px #e0b97355;
-    background: #222;
-  }
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  @media (min-width: 700px) {
-    .cards {
-      flex-direction: row;
-      justify-content: space-between;
+  <style>
+    body {
+      font-family:'Inter', sans-serif;
+      background:linear-gradient(135deg,#232526 0%,#414345 100%);
+      color:#f5f5f7;
+      margin:0;
+      min-height:100vh;
     }
-  }
-  .card {
-    background: rgba(34, 34, 44, 0.98);
-    border-radius: 16px;
-    box-shadow: 0 4px 24px #0002;
-    padding: 24px 18px;
-    flex: 1;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1.5px solid #e0b97333;
-  }
-  .card h2 {
-    font-size: 1.1rem;
-    color: #e0b973;
-    margin-bottom: 10px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-  }
-  .card p, .card ul {
-    font-size: 1rem;
-    color: #f5f5f7;
-    margin: 0 0 8px 0;
-  }
-  .card a {
-    color: #e0b973;
-    text-decoration: none;
-    font-weight: 500;
-    margin-top: 8px;
-    transition: color 0.2s;
-  }
-  .card a:hover {
-    color: #fff;
-    text-decoration: underline;
-  }
-</style>
+    header {
+      background:rgba(30, 30, 40, 0.95);
+      padding:32px 0 24px 0;
+      box-shadow:0 2px 16px rgba(0,0,0,0.12);
+      text-align:center;
+      margin-bottom:32px;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #e0b973;
+      margin: 0;
+    }
+    main {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 0 16px 32px 16px;
+    }
+    .media-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    video, canvas {
+      width: 100%;
+      max-width: 480px;
+      border-radius: 16px;
+      box-shadow: 0 0 24px #e0b97355;
+      background: #222;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    @media (min-width: 700px) {
+      .cards {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .card {
+      background:rgba(34, 34, 44, 0.98);
+      border-radius: 16px;
+      box-shadow: 0 4px 24px #0002;
+      padding: 24px 18px;
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      border: 1.5px solid #e0b97333;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      color: #e0b973;
+      margin-bottom: 10px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .card p, .card ul {
+      font-size: 1rem;
+      color: #f5f5f7;
+      margin: 0 0 8px 0;
+    }
+    .card a {
+      color: #e0b973;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 8px;
+      transition: color 0.2s;
+    }
+    .card a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
 <body>
   <header>
     <h1>Hair by Marcio - Diagnóstico Facial</h1>
@@ -118,12 +117,10 @@
         <a id="link-produto" href="#" target="_blank" rel="noopener">Ver no Mercado Livre</a>
       </div>
     </div>
+    <div id="resultado">
+      Aguardando avaliação...
+    </div>
   </main>
-<!-- ...existing code... -->
-
-<div id="resultado">
-  Aguardando avaliação...
-</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.min.js"></script>
@@ -140,88 +137,58 @@
     176, 149, 150, 136, 172, 58, 132, 93, 234, 127,
     162, 21, 54, 103, 67, 109
   ];
-// ...existing code...
-function calculaFormatoRosto(points) {
-  // Índices aproximados dos landmarks para cada região
-  const testa = [10, 338]; // topo da testa (ajuste conforme necessário)
-  const bochecha = [454, 234]; // pontos mais largos das maçãs
-  const maxilar = [172, 397]; // pontos mais largos do maxilar
-  const queixo = [152, 10]; // queixo ao topo
 
-  // Calcula distâncias
+  // Distância entre dois points
   function distancia(a, b) {
-    return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));
+    return Math.sqrt(Math.pow(a.x - b.x, 2) + Math.pow(a.y - b.y, 2));  
   }
+  
+  // Cálculo do formado do rosto
+  function calculaFormatoRosto(landmarks) {
+    const larguraTesta = distancia(landmarks[234], landmarks[454]);
+    const larguraBochecha = distancia(landmarks[93], landmarks[323]);
+    const larguraMaxilar = distancia(landmarks[172], landmarks[397]);
+    const alturaRosto = distancia(landmarks[10], landmarks[152]);
 
-  const larguraTesta = distancia(points[0], points[1]);
-  const larguraBochecha = distancia(points[8], points[26]);
-  const larguraMaxilar = distancia(points[20], points[14]);
-  const alturaRosto = distancia(points[18], points[0]);
-
-  // Critérios baseados em proporções
-  if (
-    Math.abs(larguraBochecha - larguraMaxilar) < 0.03 &&
-    Math.abs(larguraBochecha - larguraTesta) < 0.03 &&
-    alturaRosto / larguraBochecha < 1.1
-  ) {
-    return "Redondo";
+    if (Math.abs(larguraBochecha - larguraMaxilar) < 0.03 &&
+        Math.abs(larguraBochecha - larguraTesta) < 0.03 &&
+        alturaRosto / larguraBochecha < 1.1) {
+      return "Redondo";
+    }
+    if (Math.abs(larguraBochecha - larguraMaxilar) < 0.03 &&
+        Math.abs(larguraBochecha - larguraTesta) < 0.03 &&
+        alturaRosto / larguraBochecha >= 1.1) {
+      return "Quadrado";
+    }
+    if (alturaRosto / larguraBochecha > 1.5) {
+      return "Retangular";
+    }
+    if (larguraBochecha > larguraTesta && larguraBochecha > larguraMaxilar) {
+      return "Diamante";
+    }
+    if (larguraTesta > larguraBochecha && larguraTesta > larguraMaxilar) {
+      return "Coração";
+    }
+    if (alturaRosto / larguraBochecha > 1.3 && larguraBochecha > larguraMaxilar) {
+      return "Oval";
+    }
+    return "Indefinido";
   }
-  if (
-    Math.abs(larguraBochecha - larguraMaxilar) < 0.03 &&
-    Math.abs(larguraBochecha - larguraTesta) < 0.03 &&
-    alturaRosto / larguraBochecha >= 1.1
-  ) {
-    return "Quadrado";
-  }
-  if (alturaRosto / larguraBochecha > 1.5) {
-    return "Retangular";
-  }
-  if (larguraBochecha > larguraTesta && larguraBochecha > larguraMaxilar) {
-    return "Diamante";
-  }
-  if (larguraTesta > larguraBochecha && larguraTesta > larguraMaxilar) {
-    return "Coração";
-  }
-  if (alturaRosto / larguraBochecha > 1.3 && larguraBochecha > larguraMaxilar) {
-    return "Oval";
-  }
-  return "Indefinido";
-}
-// ...existing code...
+  
+  //Sugestão de corte
   function sugestaoCorte(formato) {
     const sugestoes = {
-      Oval: {
-        corte: "Quase todos os estilos caem bem. Apenas evite franjas muito pesadas que escondam o rosto.",
-        evitar: "Franjas muito pesadas, que cobrem toda a testa."
-      },
-      Redondo: {
-        corte: "Cortes que criam volume no topo e alongam o rosto. Topetes e laterais mais rentes ajudam.",
-        evitar: "Volume nas laterais, que acentua a largura do rosto."
-      },
-      Quadrado: {
-        corte: "Cortes com topo levemente volumoso e laterais mais rentes. Mechas ajudam a dar suavidade.",
-        evitar: "Cortes muito retos e pesados que ressaltem o maxilar."
-      },
-      Alongado: {
-        corte: "Franja ou volume nas laterais para dar uma aparência mais cheia ao rosto.",
-        evitar: "Topetes muito altos, que alongam ainda mais o topo."
-      },
-      Coração: {
-        corte: "Cortes que deixem volume na parte de baixo, como um bob médio.",
-        evitar: "Penteados muito altos que acentuam a testa."
-      },
-      Diamante: {
-        corte: "Franja na testa e volume nas laterais ajudam a harmonizar o rosto.",
-        evitar: "Penteados puxados para trás, que destacam o queixo."
-      },
-      Indefinido: {
-        corte: "Melhor mover o rosto para a câmera para uma avaliação mais precisa.",
-        evitar: ""
-      }
+      Oval: {corte:"Quase todos estilos caem bem.",evitar:"Franjas muito pesadas."},
+      Redondo: {corte:"Cortes que criam volume no topo.",evitar:"Volume nas laterais."},
+      Quadrado: {corte:"Cortes com topo levemente volumoso.",evitar:"Cortes muito retos."},
+      Retangular: {corte:"Franja ou volume nas laterais.",evitar:"Topetes muito altos."},
+      Coração: {corte:"Cortes que deixem volume na parte de baixo.",evitar:"Penteados muito altos."},
+      Diamante: {corte:"Franja na testa e volume nas laterais.",evitar:"Penteados puxados para trás."},
+      Indefinido: {corte:"Melhor mover o rosto para avaliação.",evitar:""}
     };
     return sugestoes[formato] || sugestoes.Indefinido;
   }
-
+  
   const faceMesh = new FaceMesh({ 
     locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/${file}` 
   });
@@ -239,9 +206,10 @@ function calculaFormatoRosto(points) {
       const landmarks = results.multiFaceLandmarks[0];
       const contourPoints = faceContourIndices.map(i => landmarks[i]);
 
-      // Desenha contorno do rosto
+      // Desenha contorno pontilhado
       ctx.strokeStyle = "#0ff";
-      ctx.lineWidth = 3;
+      ctx.lineWidth = 2;
+      ctx.setLineDash([5, 5]);
       ctx.beginPath();
       contourPoints.forEach((point, idx) => {
         const x = point.x * canvas.width;
@@ -251,9 +219,10 @@ function calculaFormatoRosto(points) {
       });
       ctx.closePath();
       ctx.stroke();
+      ctx.setLineDash([]);
 
-      // Analisa o formado do rosto e faz sugestões
-      const formado = calculaFormatoRosto(contourPoints);
+      // Analisa o formado do rosto
+      const formado = calculaFormatoRosto(landmarks);
       const { corte, evitar } = sugestaoCorte(formado);
 
       resultado.innerHTML = `
@@ -263,7 +232,7 @@ function calculaFormatoRosto(points) {
           <li>Evitar: ${evitar}</li>
         </ul>`;
     } else {
-      resultado.textContent = "Rosto não detectado. Tente mover o rosto para o centro.";
+      resultado.textContent = "Rosto não detectado.";
     }
     ctx.restore();
   });
